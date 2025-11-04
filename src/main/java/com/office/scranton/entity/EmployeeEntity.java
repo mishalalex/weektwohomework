@@ -23,6 +23,8 @@ public class EmployeeEntity {
     private String lastname;
     @Column(name = "email")
     private String email;
+    @Column(name = "role")
+    private String role;
     @Column(name = "salary")
     private Double salary;
     @Column(name = "active")
