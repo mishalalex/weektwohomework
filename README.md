@@ -1,4 +1,4 @@
-# Simple CRUD Application
+# Week Two Homework - Department-Employee CRUD application
 
 This is a minimal Java application demonstrating CRUD (Create, Read, Update, Delete) operations.
 
