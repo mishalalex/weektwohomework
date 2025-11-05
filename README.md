@@ -16,7 +16,19 @@ This is a standard Maven project. To build the project, run:
 ```bash
 ./mvnw clean package
 ````
-
+## Folder Structure
+````
+advice:    	Contains global exception handling logic, often using @ControllerAdvice to manage error responses across the application.
+annotation:	Holds custom annotations defined for use within the project, typically to reduce boilerplate or enforce business logic.
+config:    	Contains configuration classes (e.g., database, security, or other beans) necessary to initialize and customize the Spring application.
+controller:	Houses the REST API endpoints (@RestController), handling incoming HTTP requests and returning responses.
+dto	Stores: Data Transfer Objects, which are classes used to shape and transfer data between the client and the application layers.
+entity:    	Defines the JPA entities (@Entity), which represent the data models and map directly to the database tables (e.g., Department).
+exception: 	Contains custom exception classes specific to the application's business logic, used for structured error reporting.
+repository:	Holds the Data Access Objects (DAOs) (@Repository), which interact directly with the H2 database to perform CRUD operations.
+service:  	Contains the business logic layer (@Service), coordinating between the controller and the repository.
+ScrantonApplication.java	The main entry point class with the @SpringBootApplication annotation to launch the application.
+````
 ## Running the Application
 
 Once built, you can run the application:
